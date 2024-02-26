@@ -1,12 +1,11 @@
 export default function vitePluginVirtualFile() {
 
-  const virtualStyleId = '@my-vite-app/vstyle.css'
   const resolvedVirtualStyleId = '@my-vite-app/vstyle-resolved.css?direct'
 
   return {
     name: 'vite-plugin-virtual-file',
     resolveId(id) {
-      if (id.includes(virtualStyleId)) {
+      if (id.includes('@my-vite-app/vstyle.css')) {
         return resolvedVirtualStyleId;
       }
     },

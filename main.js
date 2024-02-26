@@ -11,6 +11,7 @@ document.querySelector('#app').innerHTML = `
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1>Hello Vite!</h1>
+    <h2>Let's test plugins!</h2>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
